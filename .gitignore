@@ -1,0 +1,11 @@
+*.pyc
+.idea
+dist
+nosetests.xml
+*.egg-info
+static
+media
+local_settings.py
+node_modules/
+assets/bundles/
+webpack-stats.json

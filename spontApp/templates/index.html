@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpontApp</title>
+</head>
+<body>
+    <div id="main-div" class="center-div">
+        <h1>Search Flights</h1>
+        <div id="form-div">
+            <form method="post" action="api/query" enctype="multipart/form-data">
+                {% csrf_token %}
+                <span>Budget:</span><input type="number" name="budget" value="2000"></br>
+                <span>Origin:</span><input type="text" name="origin" value="TLV"></br>
+                <span>Number of Passengers:</span><input type="number" name="num_passengers" value="2"></br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
